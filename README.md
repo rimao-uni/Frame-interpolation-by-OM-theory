@@ -2,11 +2,6 @@
 # **frame-interpolation-by-Onsager-Machlup**
 
 ## 概要 
-![end](https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/14266795-9c37-4d94-8e70-0e7be0be8fe4)
-![start](https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/23aa5926-fb31-49d1-8201-6d218ca93aab)
-![補間起動](https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/08a3790c-cadc-4e9c-8f1e-642f340db244)
-![手本起動](https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/58fa6976-06cf-4037-874f-4cf4a8512a58)
-
 生成されたデータで両端のモーションを与えたときに, OM理論に基づく計算手法によって拘束条件に従った最尤経路を辿り, フレームの補間を行う.  
 例えば以下のように端点を拘束条件をとして与える.  
 
@@ -17,8 +12,8 @@
 
 手本起動を左のように定めると, 右のように始点から手本軌道に沿ったよろめくような運動をしながら最終的にゴール位置に向かうような軌道が得られる.  
 
-<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/img/手本軌道.gif" height="400">
-<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/img/補間軌道.gif" height="400">  
+<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/08a3790c-cadc-4e9c-8f1e-642f340db244" height="400">
+<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/58fa6976-06cf-4037-874f-4cf4a8512a58" height="400">  
 
 　　　　　[手本となる軌道]  　　　　　　　　　　　[最尤経路を辿る軌道]  
 
