@@ -61,7 +61,7 @@ $$\frac{{\partial S}_{OM}}{\partial x_k}=0,k\neq0,P$$
 また $k=0,P$においてはそれぞれ ${-x_1+x}_0={-y_1+y}_0$, $x_P{-x} _ {P-1}=y_P-y _{P-1}$ となる。
   
 係数行列を $L$とし, 例えば端点のフレームが ${\widetilde{x}}_0$, ${\widetilde{x}}_P$と定まっているとき以下のような連立方程式となる.  
-$$Lx=Ly-L\widetilde{x}$$　　
+$$Lx=Ly-L\widetilde{x}$$
 
 ただし,  
 
