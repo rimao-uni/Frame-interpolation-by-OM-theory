@@ -2,11 +2,16 @@
 # **frame-interpolation-by-Onsager-Machlup**
 
 ## 概要 
+![end](https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/14266795-9c37-4d94-8e70-0e7be0be8fe4)
+![start](https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/23aa5926-fb31-49d1-8201-6d218ca93aab)
+![補間起動](https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/08a3790c-cadc-4e9c-8f1e-642f340db244)
+![手本起動](https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/58fa6976-06cf-4037-874f-4cf4a8512a58)
+
 生成されたデータで両端のモーションを与えたときに, OM理論に基づく計算手法によって拘束条件に従った最尤経路を辿り, フレームの補間を行う.  
 例えば以下のように端点を拘束条件をとして与える.  
 
-<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/img/start.png" height="250">
-<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/img/end.png" height="250">
+<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/23aa5926-fb31-49d1-8201-6d218ca93aab" height="250">
+<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/14266795-9c37-4d94-8e70-0e7be0be8fe4" height="250">
 
 　　　　　[スタート位置]　　　　　　　 　　　　  [ゴール位置]　　　　　　　　　　
 
