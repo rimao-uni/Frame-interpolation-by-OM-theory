@@ -5,8 +5,8 @@
 生成されたデータで両端のモーションを与えたときに, OM理論に基づく計算手法によって拘束条件に従った最尤経路を辿り, フレームの補間を行う.  
 例えば以下のように端点を拘束条件をとして与える.  
 
-<img src="https://github.com/rimao-uni/frame-interpolation-by-Onsager-Machlup/assets/117995370/9ad65f26-1203-479d-b051-7522c8809d5b" alt="スタート位置" height="250">
-<img src="https://github.com/rimao-uni/frame-interpolation-by-Onsager-Machlup/assets/117995370/3802e55b-b245-4032-b0bc-4123cd844450" alt="ゴール位置" height="250">
+<img src="https://github.com/rimao-uni/frame-interpolation-by-Onsager-Machlup/assets/img/start.png" alt="スタート位置" height="250">
+<img src="https://github.com/rimao-uni/frame-interpolation-by-Onsager-Machlup/assets/img/end.png" alt="ゴール位置" height="250">
 
 　　　　　[スタート位置]　　　　　　　 　　　　  [ゴール位置]　　　　　　　　　　
 
