@@ -65,8 +65,6 @@ $$Lx=Ly-L\widetilde{x}$$
 
 この連立方程式を数値的に解き, 目標軌道 𝑦(𝑡)の拘束条件に従った経路 𝑥(𝑡)を得る.   
 
-$$ x=\left(\begin{matrix}0\\x_1\\\vdots\\x_{P-1}\\0\\\end{matrix}\right)$$
-
 
 ## References
 ・SMPL構造のデータをMujocoで扱えるようにするため, [Universal Humanoid Controller](https://github.com/ZhengyiLuo/UHC?tab=readme-ov-file)のソースコードを参照し, データを変換した.
