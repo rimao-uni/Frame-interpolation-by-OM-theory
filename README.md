@@ -2,7 +2,7 @@
 # **frame-interpolation-by-Onsager-Machlup**
 
 ## 概要 
-生成されたデータで両端のモーションを与えたときに, OM理論に基づく計算手法によって拘束条件に従った最尤経路を辿り, フレームの補間を行う.  
+生成されたデータで両端のモーションを与, OM理論に基づく計算手法によって拘束条件に従うような最尤経路を計算する.  
 例えば以下のように端点を拘束条件をとして与える.  
 
 <img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/23aa5926-fb31-49d1-8201-6d218ca93aab" height="250">
@@ -12,10 +12,10 @@
 
 手本起動を左のように定めると, 右のように始点から手本軌道に沿ったよろめくような運動をしながら最終的にゴール位置に向かうような軌道が得られる.  
 
-<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/08a3790c-cadc-4e9c-8f1e-642f340db244" height="400">
 <img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/58fa6976-06cf-4037-874f-4cf4a8512a58" height="400">  
+<img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/08a3790c-cadc-4e9c-8f1e-642f340db244" height="400">
 
-　　　　　　　　[手本となる軌道]  　　　　　　　　　　　[最尤経路を辿る軌道]  
+　　　　　　　[手本となる軌道]  　　　　　　　　　　　[最尤経路を辿る軌道]  
 
 ## Dependencies  
 環境を作成するには次の手順に従う.  
@@ -26,7 +26,7 @@ conda create -n uhc python=3.8
 pip install -r requirements.txt
 ```
 ## 実行方法
-※入力する軌道はいくつかのmotionを/npyresultのresults.npyとして保存してください.(motionの生成方法は今後公開予定. 現在はサンプルをご利用ください.)
+※入力する軌道はいくつかのmotionを/npyresultのresults.npyとして保存する.(motionの生成方法は今後公開予定. 現在はサンプルをご利用ください.)
 
 以下のようにして, [--n]にmotion indexをコマンドライン引数として入力し, 生成データの中身を確認する.  
 ```
@@ -34,13 +34,13 @@ mjpython mjviewer_raw.py --n
 ```
 
 以下のようにして, フレーム補間結果を可視化する.   
-※コードのstart, example, end に任意のmotion indexを定義することができます.
+※コードのstart, example, end に任意のmotion indexを定義することができる.
 ```
 mjpython Onsager_Machlup_Interpolate_qpos.py  
 ```
 
 ## 理論の概要
-Onsager-Machlup作用とは, 拡散過程の確率的な過程に対する定式化を行ったもので, 拡散モデルと同じ, 過減衰ランジュバン方程式に従う系において, 分子のブラウン運動における最尤経路を導出するために用いられる. この手法を拘束条件を与えたモーションの最尤経路を計算するために用いた. まず, 以下のような外力𝐹(𝑡)を受けて運動する粒子系 𝑥の過減衰ランジュバン方程式 
+Onsager-Machlup作用とは, 拡散過程の確率的な過程に対する定式化を行ったもので, 拡散モデルと同じ過減衰ランジュバン方程式に従う系において, 分子のブラウン運動における最尤経路を導出するために用いられる. この手法を拘束条件を与えたモーションの最尤経路を計算するために用いた. まず, 以下のような外力𝐹(𝑡)を受けて運動する粒子系 𝑥の過減衰ランジュバン方程式 
 $$\frac{dx}{dt}=\mu F+\sqrt{2\mu K_BT}\xi\left(t\right)$$
 
 を考える. ここで, 𝜇は摩擦定数 𝑟の逆数であり, $K_BT$は温度, 𝜉(𝑡)はランダム力である. このとき経路 𝑥(𝑡)をとる確率 𝑝[𝑥(𝑡)]は以下のような関係にある. 
