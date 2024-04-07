@@ -10,7 +10,7 @@
 
 　　　　　[スタート位置]　　　　　　　 　　　　  [ゴール位置]　　　　　　　　　　
 
-手本起動を左のように定めると, 右のように始点から手本軌道に沿ったよろめくような運動をしながら最終的にゴール位置に向かうような軌道が得られる.  
+手本起動を左のように定めると, 右のように始点から手本軌道のめくような運動をしながら最終的にゴール位置に向かうような軌道が得られる.  
 
 <img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/58fa6976-06cf-4037-874f-4cf4a8512a58" height="400">  
 <img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/08a3790c-cadc-4e9c-8f1e-642f340db244" height="400">
