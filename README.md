@@ -15,7 +15,7 @@
 <img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/08a3790c-cadc-4e9c-8f1e-642f340db244" height="400">
 <img src="https://github.com/rimao-uni/Frame-interpolation-by-OM-theory/assets/117995370/58fa6976-06cf-4037-874f-4cf4a8512a58" height="400">  
 
-　　　　　[手本となる軌道]  　　　　　　　　　　　[最尤経路を辿る軌道]  
+　　　　　　　　[手本となる軌道]  　　　　　　　　　　　[最尤経路を辿る軌道]  
 
 ## Dependencies  
 環境を作成するには次の手順に従う.  
