@@ -56,7 +56,7 @@ $$S_{OM}=\int_{t_i}^{t_f}\frac{r}{4K_BT}\left(\dot{x}\left(t\right)-\dot{y}\left
 $$S_{OM}\simeq\sum_{i=0}^{P-1}\left(\left(x_{i+1}-x_i\right)-\left(y_{i+1}-y_i\right)\right)^2$$
 
 よって $x_k$における極値必要条件では, 微分すると以下のような関係になる.  
-$$\frac{{\partial S}_{OM}}{\partial x_k}=0,P\neq0$$  
+$$\frac{{\partial S}_{OM}}{\partial x_k}=0,k\neq0,P$$  
 
 また $k=0,P$においてはそれぞれ ${-x_1+x}_0={-y_1+y}_0$, $x_P{-x} _ {P-1}=y_P-y _{P-1}$ となる。
   
