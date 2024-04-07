@@ -19,14 +19,14 @@
 
 ## Dependencies  
 環境を作成するには次の手順に従う.  
-新しい conda 環境を作成し, 以下をインストール
+新しい conda 環境を作成し, 以下をインストール  
 シミュレーション環境としてはオープンソースの物理演算エンジンである[Mujoco](https://mujoco.org/)を使用する.
 ```
 conda create -n uhc python=3.8
 pip install -r requirements.txt
 ```
 ## 実行方法
-※入力する軌道はいくつかのmotionを/npyresultのresults.npyとして保存する.(motionの生成方法は今後公開予定. 現在はサンプルをご利用ください.)
+※入力する軌道はいくつかのmotionを/npyresult/results.npy に保存する.(motionの生成方法は今後公開予定. 現在はサンプルをご利用ください.)
 
 以下のようにして, [--n]にmotion indexをコマンドライン引数として入力し, 生成データの中身を確認する.  
 ```
@@ -34,7 +34,7 @@ mjpython mjviewer_raw.py --n
 ```
 
 以下のようにして, フレーム補間結果を可視化する.   
-※コードのstart, example, end に任意のmotion indexを定義することができる.
+※Onsager_Machlup_Interpolate_qpos.pyのstart, example, end に任意のmotion indexを定義することができる.
 ```
 mjpython Onsager_Machlup_Interpolate_qpos.py  
 ```
@@ -56,7 +56,7 @@ $$S_{OM}=\int_{t_i}^{t_f}\frac{r}{4K_BT}\left(\dot{x}\left(t\right)-\dot{y}\left
 $$S_{OM}\simeq\sum_{i=0}^{P-1}\left(\left(x_{i+1}-x_i\right)-\left(y_{i+1}-y_i\right)\right)^2$$
 
 よって $x_k$における極値必要条件では, 微分すると以下のような関係になる.  
-$$\frac{{\partial S}_{OM}}{\partial x_k}=0,k\neq0$$  
+$$\frac{{\partial S}_{OM}}{\partial x_k}=0,P\neq0$$  
 
 また $k=0,P$においてはそれぞれ ${-x_1+x}_0={-y_1+y}_0$, $x_P{-x} _ {P-1}=y_P-y _{P-1}$ となる。
   
